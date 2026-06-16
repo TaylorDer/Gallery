@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="520" height="120">
+  <rect width="520" height="120" fill="#fdf8f6" rx="12"/>
+  <text x="20" y="30" font-family="Nunito,sans-serif" font-size="14" fill="#7a6b72"> 51CA:  /</text>
+  <text x="30" y="85" font-size="48" font-weight="bold" fill="#b88498"></text>
+  <text x="80" y="85" font-size="36" fill="#4a3f45">+</text>
+  <text x="110" y="85" font-size="40" fill="#4a3f45"><ù</text>
+  <text x="160" y="85" font-size="36" fill="#4a3f45">+</text>
+  <text x="190" y="85" font-size="40" fill="#4a3f45">>œ</text>
+  <text x="240" y="85" font-size="36" fill="#4a3f45">+</text>
+  <text x="270" y="85" font-size="40" fill="#4a3f45"><2</text>
+  <text x="320" y="85" font-size="36" fill="#4a3f45">+</text>
+  <text x="350" y="85" font-size="40" fill="#4a3f45">=</text>
+  <text x="400" y="85" font-size="36" fill="#4a3f45">+</text>
+  <text x="430" y="85" font-size="40" fill="#4a3f45"><N</text>
+  <text x="480" y="85" font-size="36" fill="#b88498">= ?</text>
+</svg>

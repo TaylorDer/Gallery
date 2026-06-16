@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карты, маршруты, QR-код и источники</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">Картинная галерея в Тамбове<span>Учебный сайт, 2026</span></div>
+      <nav aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О галерее</a></li>
+          <li><a href="media.html">Фото, панорамы и видео</a></li>
+          <li><a href="scenario.html">Сценарий посещения</a></li>
+          <li><a href="scenario-en.html">Visit Scenario</a></li>
+          <li><a href="interview.html">Интервью</a></li>
+          <li><a href="interactive.html">Интерактив</a></li>
+          <li><a class="active" href="maps-sources.html">Карты и источники</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <p class="eyebrow">Навигация и источники</p>
+      <h1>Карты, маршруты, QR-код и источники</h1>
+      <p>Адрес галереи: г. Тамбов, ул. Советская, 97.</p>
+    </div>
+
+    <section class="section">
+      <h2>Google Maps</h2>
+      <p><strong>Тамбовская областная картинная галерея:</strong> г. Тамбов, ул. Советская, 97.</p>
+      <div class="embed map-frame">
+        <iframe
+          src="https://maps.google.com/maps?q=52.724639,41.455975&hl=ru&z=17&output=embed"
+          title="Тамбовская областная картинная галерея на Google Maps"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="source-note">
+        <a href="https://www.google.com/maps/search/?api=1&query=52.724639,41.455975" target="_blank" rel="noopener">Открыть галерею в Google Maps</a>.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Яндекс Карты</h2>
+      <div class="embed map-frame">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?ll=41.455975%2C52.724639&z=17&pt=41.455975%2C52.724639%2Cpm2rdm&l=map"
+          title="Тамбовская областная картинная галерея на Яндекс Картах"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="source-note">
+        <a href="https://yandex.ru/maps/?pt=41.455975,52.724639&z=17&l=map" target="_blank" rel="noopener">Открыть галерею в Яндекс Картах</a>.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Маршрут от учебного корпуса до галереи</h2>
+      <div class="route-box">
+        <p><strong>Начальная точка:</strong> [АДРЕС УЧЕБНОГО КОРПУСА]</p>
+        <p><strong>Конечная точка:</strong> Тамбовская областная картинная галерея, г. Тамбов, ул. Советская, 97.</p>
+        <form class="route-form" data-route-form>
+          <label>
+            Адрес учебного корпуса
+            <input type="text" value="[АДРЕС УЧЕБНОГО КОРПУСА]" aria-label="Адрес учебного корпуса">
+          </label>
+          <div class="button-row">
+            <button class="btn" type="submit" data-service="google">Google Maps</button>
+            <button class="btn secondary" type="submit" data-service="yandex">Яндекс Карты</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Маршрут от дома до галереи</h2>
+      <div class="route-box">
+        <p><strong>Начальная точка:</strong> [АДРЕС ДОМА]</p>
+        <p><strong>Конечная точка:</strong> Тамбовская областная картинная галерея, г. Тамбов, ул. Советская, 97.</p>
+        <form class="route-form" data-route-form>
+          <label>
+            Адрес дома
+            <input type="text" value="[АДРЕС ДОМА]" aria-label="Адрес дома">
+          </label>
+          <div class="button-row">
+            <button class="btn" type="submit" data-service="google">Google Maps</button>
+            <button class="btn secondary" type="submit" data-service="yandex">Яндекс Карты</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>QR-код на сайт</h2>
+      <div class="qr-block">
+        <img src="assets/qr-site.svg" alt="QR-код на главную страницу сайта">
+        <div>
+          <p>
+            QR-код ведет на главную страницу локальной версии сайта. Если сайт будет опубликован,
+            QR-код можно заменить на код с публичной ссылкой.
+          </p>
+          <p class="source-note">Текущий адрес страницы: <span data-current-url>index.html</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Список литературы</h2>
+      <ol class="source-list">
+        <li>Официальный сайт Тамбовской областной картинной галереи: <a href="https://www.tambovart.ru/" target="_blank" rel="noopener">tambovart.ru</a>.</li>
+        <li>Страница «О галерее» Тамбовской областной картинной галереи: <a href="https://www.tambovart.ru/o-galeree.html" target="_blank" rel="noopener">tambovart.ru/o-galeree.html</a>.</li>
+        <li>Страница «Контакты» Тамбовской областной картинной галереи: <a href="https://www.tambovart.ru/kontaktyi.html" target="_blank" rel="noopener">tambovart.ru/kontaktyi.html</a>.</li>
+        <li>Материалы сайта Культура.РФ о Тамбовской областной картинной галерее: <a href="https://www.culture.ru/institutes/89757/tambovskaya-oblastnaya-kartinnaya-galereya" target="_blank" rel="noopener">culture.ru</a>.</li>
+        <li>Материалы eLIBRARY по теме музеев, галерей и культурного наследия: <a href="https://www.elibrary.ru/" target="_blank" rel="noopener">elibrary.ru</a>.</li>
+        <li>Фото- и видеоматериалы, подготовленные авторами проекта.</li>
+        <li>Google Maps: <a href="https://www.google.com/maps" target="_blank" rel="noopener">google.com/maps</a>.</li>
+        <li>Яндекс Карты: <a href="https://yandex.ru/maps/" target="_blank" rel="noopener">yandex.ru/maps</a>.</li>
+        <li>Rutube: <a href="https://rutube.ru/video/41c4757165e6a5879e74a8eb932a50e2/" target="_blank" rel="noopener">rutube.ru</a>.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">Тамбовская областная картинная галерея · учебный проект · 2026</div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

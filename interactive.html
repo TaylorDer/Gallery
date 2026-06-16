@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интерактив</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">Картинная галерея в Тамбове<span>Учебный сайт, 2026</span></div>
+      <nav aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О галерее</a></li>
+          <li><a href="media.html">Фото, панорамы и видео</a></li>
+          <li><a href="scenario.html">Сценарий посещения</a></li>
+          <li><a href="scenario-en.html">Visit Scenario</a></li>
+          <li><a href="interview.html">Интервью</a></li>
+          <li><a class="active" href="interactive.html">Интерактив</a></li>
+          <li><a href="maps-sources.html">Карты и источники</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <p class="eyebrow">Задания и цифровые элементы</p>
+      <h1>Интерактив</h1>
+      <p>Статистика, Scratch, Tinkercad, пазл, ребусы и кроссворд по теме галереи.</p>
+    </div>
+
+    <section class="section">
+      <h2>Статистика eLIBRARY</h2>
+      <p>
+        Для учебной части проекта оформлена сводка по поисковым запросам eLIBRARY,
+        связанным с музеями, галереями и культурным наследием.
+      </p>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <span class="stat-number">2 847</span>
+          Запрос: «картинная галерея».
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">18 432</span>
+          Запрос: «музейное дело».
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">156</span>
+          Запрос: «культурное наследие Тамбовской области».
+        </div>
+      </div>
+      <p class="source-note">
+        Источник для сверки: <a href="https://www.elibrary.ru/" target="_blank" rel="noopener">eLIBRARY.ru</a>.
+        Учебная фиксация поиска: 16.06.2026.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Scratch</h2>
+      <div class="scratch-panel" data-scratch-panel>
+        <div class="scratch-stage" aria-label="Мини-сцена Scratch о посещении галереи">
+          <div class="scratch-label" data-scratch-label></div>
+          <div class="scratch-painting one"></div>
+          <div class="scratch-painting two"></div>
+          <div class="scratch-character"></div>
+        </div>
+        <div>
+          <h3>Мини-проект «Прогулка по галерее»</h3>
+          <p>
+            В Scratch такой проект можно собрать как короткую интерактивную историю:
+            студент подходит к галерее, выбирает зал, рассматривает картины и делится
+            впечатлением после посещения.
+          </p>
+          <ul class="info-list">
+            <li>Спрайт: студент-посетитель.</li>
+            <li>Сцены: вход, зал, обсуждение впечатлений.</li>
+            <li>Интерактив: смена сцен и выбор экспоната.</li>
+          </ul>
+          <div class="button-row">
+            <button class="btn" type="button" data-scratch-next>Следующая сцена</button>
+            <a class="btn secondary" href="https://scratch.mit.edu/" target="_blank" rel="noopener">Scratch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Tinkercad</h2>
+      <div class="model-wrap">
+        <div class="model-scene" aria-label="Условная 3D-модель здания галереи">
+          <div class="model-building">
+            <div class="roof"></div>
+            <div class="base"></div>
+            <div class="window w1"></div>
+            <div class="window w2"></div>
+            <div class="window w3"></div>
+            <div class="window w4"></div>
+            <div class="entrance"></div>
+          </div>
+        </div>
+        <div>
+          <h3>Макет здания для 3D-моделирования</h3>
+          <p>
+            Блок показывает идею модели для Tinkercad: прямоугольный корпус,
+            крыша, входная группа и окна, вдохновленные зданием галереи на улице Советской.
+          </p>
+          <label class="range-line">
+            Поворот модели: <span data-model-value>-28°</span>
+            <input type="range" min="-70" max="40" value="-28" data-model-rotate>
+          </label>
+          <div class="button-row">
+            <a class="btn secondary" href="https://www.tinkercad.com/" target="_blank" rel="noopener">Tinkercad</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Пазл</h2>
+      <div class="puzzle-layout">
+        <div>
+          <div class="puzzle-board" data-puzzle-board data-image="photos/photo01.jpg" aria-label="Пазл по фотографии галереи"></div>
+          <div class="button-row">
+            <button class="btn" type="button" data-puzzle-shuffle>Перемешать</button>
+            <button class="btn secondary" type="button" data-puzzle-reset>Сбросить</button>
+          </div>
+          <div class="puzzle-status" data-puzzle-status></div>
+        </div>
+        <figure class="photo-item">
+          <button class="photo-open" type="button" data-lightbox="photos/photo01.jpg" data-caption="Исходная фотография для пазла">
+            <img src="photos/photo01.jpg" alt="Исходная фотография для пазла">
+          </button>
+          <figcaption>Исходная фотография, из которой собран пазл.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Ребусы</h2>
+      <div class="rebus-grid">
+        <div class="rebus-card">
+          <h3>Ребус 1</h3>
+          <div class="rebus-expression">
+            <span>ГАЛКА - КА</span>
+            <span>ЕЛЬ - ЛЬ</span>
+            <span>РЕКА - КА</span>
+            <span>+ Я</span>
+          </div>
+          <form class="rebus-form" data-rebus data-answer="ГАЛЕРЕЯ">
+            <input type="text" aria-label="Ответ на ребус 1" placeholder="Ответ">
+            <button class="btn" type="submit">Проверить</button>
+            <div class="rebus-status" aria-live="polite"></div>
+          </form>
+        </div>
+        <div class="rebus-card">
+          <h3>Ребус 2</h3>
+          <div class="rebus-expression">
+            <span>КАРТА - А</span>
+            <span>ИВА - ВА</span>
+            <span>НОС - ОС</span>
+            <span>+ А</span>
+          </div>
+          <form class="rebus-form" data-rebus data-answer="КАРТИНА">
+            <input type="text" aria-label="Ответ на ребус 2" placeholder="Ответ">
+            <button class="btn" type="submit">Проверить</button>
+            <div class="rebus-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Кроссворд</h2>
+      <p>
+        В кроссворде используются 8 слов: галерея, музей, картина, художник,
+        экспозиция, экскурсия, культура, Тамбов.
+      </p>
+      <div class="crossword-wrap">
+        <div>
+          <div class="crossword-grid" id="crosswordGrid" aria-label="Кроссворд на 8 слов"></div>
+          <div class="button-row">
+            <button class="btn" type="button" data-crossword-check>Проверить</button>
+            <button class="btn secondary" type="button" data-crossword-clear>Очистить</button>
+          </div>
+          <div class="crossword-status" data-crossword-status aria-live="polite"></div>
+        </div>
+        <div>
+          <h3>Вопросы</h3>
+          <ol class="clue-list" id="crosswordClues"></ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">Тамбовская областная картинная галерея · учебный проект · 2026</div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
